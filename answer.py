@@ -6,12 +6,12 @@ Python Core object Types
 
 def number():
     """
-       This is to review numbers and basic operations.
-       """
+    This is to review numbers and basic operations.
+    """
     # Write the value 4 to the power of 5 and assign it to variable x.
-    x =
+    x = 4^5
     # Write the value x divided by 3 and assign it to variable y.
-    y =
+    y = x/3
     return x,y
 
 def strings():
@@ -21,23 +21,23 @@ def strings():
 
     # Assign a string "stevens" to a variable stevens.
 
-    stevens =
+    stevens = "stevens"
 
     # Repeat variable stevens 7 times and assign it to variable stevens_7.
 
-    stevens_7 =
+    stevens_7 = stevens*7
 
     # What is the length of stevens_7?
 
-    length =
+    length = len(stevens_7) 
 
     # Concatenate variable stevens with string " is great" and assign it to variable great.
 
-    great =
+    great = stevens + " is great"
 
     # Replace "great" with "good" in variable great and assign it to a new variable good.
 
-    good =
+    good = 
 
     return stevens, stevens_7, length, great, good
 
@@ -77,19 +77,22 @@ def list_2D():
     #   second row is [6, 10, 11]
     #   third row is [12, 17, 38]
 
-    A =
+    A = 
+    [[1, 4, 5],
+     [6, 10, 11],
+     [12, 17, 38]]
 
     # Collect the items in the last column of matrix A using list comprehension and assign it to a new variable last_column.
 
-    last_column =
+    last_column = A[2] 
 
     # Get the item at the last row and last column of A.
 
-    a =
+    a = A[2][2] 
 
     # Get the item at row 2 and column 1 of A.
 
-    b =
+    b = [1][0] 
 
 
     return A,last_column, a, b
