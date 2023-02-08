@@ -37,7 +37,7 @@ def strings():
 
     # Replace "great" with "good" in variable great and assign it to a new variable good.
 
-    good = 
+    good = great.replace("great", "good") 
 
     return stevens, stevens_7, length, great, good
 
@@ -49,25 +49,26 @@ def list_1D():
     s = " hoboken,is,awesome,i,like,it "
     #Remove whitespace characters on both side and assign it to a new variable hoboken.
 
-    hoboken =
+    hoboken = s.strip() 
 
     # Split variable hoboken on a delimiter(comma) into a list of substrings and assign it to a new variable hoboken_list.
 
-    hoboken_list =
+    hoboken_list = hoboken.split(',') 
 
     # Get the first item in the hoboken_list and assign it to a new variable hoboken_first_item.
 
-    hoboken_first_item =
+    hoboken_first_item = hoboken_list[0]
 
     ####
     l=[2,3,4,1,5,6,9,10,15,12,13,-2,-6,0,0]
+    l.sort() 
 
     # Inplace sort list l (use .sort() ).
 
 
     # Get the 4th to 10th item in sorted list l and assign them to a new list new_l.
 
-    new_l =
+    new_l = l[3:10] 
 
     return hoboken,hoboken_list, hoboken_first_item, l, new_l
 
@@ -77,8 +78,7 @@ def list_2D():
     #   second row is [6, 10, 11]
     #   third row is [12, 17, 38]
 
-    A = 
-    [[1, 4, 5],
+    A = [[1, 4, 5],
      [6, 10, 11],
      [12, 17, 38]]
 
@@ -106,13 +106,22 @@ def dictionary():
     #   "fruit" => "apple"
     #   "quantity" => 18
     #   "color" => "red"
-    fruit_dict =
+    fruit_dict = {
+        "fruit": "apple", 
+        "quantity": 18, 
+        "color": "red"
+    }
     
     # Get the item in dictionary fruit_dict that the key "fruit" maps to.
 
-    f =
+    f = fruit_dict["fruit"] 
 
     # Increase the value that key "quantity" map to by 1.
+
+    fruit_dict["quantity"] += 1 
+
+    print(f)
+    print(fruit_dict["quantity"])
 
 
     return fruit_dict, f
@@ -122,19 +131,23 @@ def dictionary_nested():
     #   "jobs" => ["scientist", "engineer"] (a list)
     #   "age" => 85
 
-    Grace =
+    Grace = {
+        "name": {"first_name": "Grace", "last_name": "Hopper"}, 
+        "jobs": ["scientist", "engineer"], 
+        "age": 85 
+    }
 
     # Get the value of key "last_name" from the subdictionary of key "name" in dictionary Grace. (aka."Hopper")
 
-    last_name =
+    last_name = Grace["name"]["last_name"] 
 
     # Add "programmer" to the list that key "jobs" maps to.
 
-
+    Grace["jobs"].append("programmer") 
 
     # Get the third item in the list that key "job" maps to. (the item  you recently added)
     
-    job =
+    job = Grace["jobs"][2] 
 
 
 
